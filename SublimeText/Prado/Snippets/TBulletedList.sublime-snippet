@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[<com:TBulletedList ID="${1:bulletedList1}">
+	${2:<com:TListItem Value="${3:value 1}" Text="${4:item 1}" />
+	<com:TListItem Value="${5:value 2}" Text="${6:item 2}" />}$0
+</com:TBulletedList>]]></content>
+	<description>TBulletedList</description>
+	<scope>text.html</scope>
+	<tabTrigger>TBulletedList</tabTrigger>
+</snippet>

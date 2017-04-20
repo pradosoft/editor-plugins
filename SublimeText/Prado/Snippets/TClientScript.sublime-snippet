@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[<com:TClientScript ScriptUrl="${1:<%~ ${2:script.js} %>}" />$0]]></content>
+	<description>TClientScript</description>
+	<scope>text.html</scope>
+	<tabTrigger>TClientScript</tabTrigger>
+</snippet>

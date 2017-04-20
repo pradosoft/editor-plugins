@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[<com:TTextHighlighter ShowLineNumbers="${1:true}" Language="${2:PHP}">
+	${0:<!-- content -->}
+</com:TTextHighlighter>]]></content>
+	<description>TTextHighlighter</description>
+	<scope>text.html</scope>
+	<tabTrigger>TTextHighlighter</tabTrigger>
+</snippet>

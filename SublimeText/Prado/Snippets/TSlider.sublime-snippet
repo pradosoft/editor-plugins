@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[<com:TSlider ID="${1:slider1}" MinValue="${2:0}" MaxValue="${3:100}" AutoPostBack="${4:true}" onValueChanged="${5:slider1ValueChanged}" />
+]]></content>
+	<description>TSlider</description>
+	<scope>text.html</scope>
+	<tabTrigger>TSlider</tabTrigger>
+</snippet>

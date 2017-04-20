@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[<com:TActiveLinkButton
+	ID="${1:linkButton1}"
+	Text="${2:Click Me}"
+	OnClick="${3:${1}_Clicked}"
+	OnCallback="${3:${1}_oncallback}"
+/>$0]]></content>
+	<description>TActiveLinkButton</description>
+	<scope>text.html</scope>
+	<tabTrigger>TActiveLinkButton</tabTrigger>
+</snippet>

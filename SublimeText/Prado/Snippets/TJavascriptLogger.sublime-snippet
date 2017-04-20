@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[<com:TJavascriptLogger />$0]]></content>
+	<description>TJavascriptLogger</description>
+	<scope>text.html</scope>
+	<tabTrigger>TJavascriptLogger</tabTrigger>
+</snippet>

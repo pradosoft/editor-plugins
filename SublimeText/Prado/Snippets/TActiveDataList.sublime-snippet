@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[<com:TActiveDataList ID="${1:list1}" >
+	$0
+</com:TActiveDataList>]]></content>
+	<description>TActiveDataList</description>
+	<scope>text.html</scope>
+	<tabTrigger>TActiveDataList</tabTrigger>
+</snippet>

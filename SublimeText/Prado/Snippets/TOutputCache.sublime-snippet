@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[<com:TOutputCache>
+	${0:<!-- content to be cached-->}
+</com:TOutputCache>]]></content>
+	<description>TOutputCache</description>
+	<scope>text.html</scope>
+	<tabTrigger>TOutputCache</tabTrigger>
+</snippet>

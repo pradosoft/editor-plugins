@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[<com:TTableHeaderRow>
+	${1:<com:TTableHeaderCell Text="${2:header cell 1}" />
+	<com:TTableHeaderCell Text="${3:header cell 2}" />}$0
+</com:TTableHeaderRow>]]></content>
+	<description>TTableHeaderRow</description>
+	<scope>text.html</scope>
+	<tabTrigger>TTableHeaderRow</tabTrigger>
+</snippet>

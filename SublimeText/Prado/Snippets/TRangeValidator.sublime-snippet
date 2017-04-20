@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[<com:TRangeValidator
+	ControlToValidate="${1:controlIDToValidate}"
+	DataType="${2:Integer}"	
+	${3:MinValue="${4:2}"}
+	${5:MaxValue="${6:5}"}
+	ErrorMessage="${7:out of range}" />$0]]></content>
+	<description>TRangeValidator (TValidator)</description>
+	<scope>text.html</scope>
+	<tabTrigger>TValidator</tabTrigger>
+</snippet>

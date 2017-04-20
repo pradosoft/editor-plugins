@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[<com:TImageMap
+	ID="${1:imageMap1}"
+	ImageUrl=<%~ ${2:hotspots.gif} %>
+	AlternateText="${3:${1}}"
+	OnClick="${4:${1}_Clicked}">
+${5:<com:TTCircleHotSpot
+	${6:HotspotMode="${7:Navigate}"
+	NavigateUrl="${8:https://github.com/pradosoft/prado}"}
+	AlternateText="${9:Navigate to Prado framework}"
+	X="${10:80}" Y="${11:80}" Radius="${12:55}" />}$0
+</com:TImageMap>]]></content>
+	<description>TImageMap</description>
+	<scope>text.html</scope>
+	<tabTrigger>TImageMap</tabTrigger>
+</snippet>

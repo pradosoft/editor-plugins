@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[<com:TActiveRadioButton
+	ID="${1:radioButton1}"
+	Text="${2:RadioButton Text}"
+	OnCallback="${3:$1_oncallback}"
+/>$0]]></content>
+	<description>TActiveRadioButton</description>
+	<scope>text.html</scope>
+	<tabTrigger>TActiveRadioButton</tabTrigger>
+</snippet>

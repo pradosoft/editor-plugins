@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[<com:TTable>
+	${1:<com:TTableRow>
+		<com:TTableHeaderCell Text="${2:header cell 1}" />
+		<com:TTableHeaderCell Text="${3:header cell 2}" />
+	</com:TTableRow>
+	<com:TTableRow>
+		<com:TTableCell>${4:cell 1}</com:TTableCell>
+		<com:TTableCell>${5:cell 2}$0</com:TTableCell>
+	</com:TTableRow>}
+</com:TTable>]]></content>
+	<description>TTable</description>
+	<scope>text.html</scope>
+	<tabTrigger>TTable</tabTrigger>
+</snippet>

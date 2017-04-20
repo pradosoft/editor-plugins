@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[<com:TWizardStep Title="${1:step 1}" StepType="${2:Step}">
+	$0
+</com:TWizardStep>]]></content>
+	<description>TWizardStep</description>
+	<scope>text.html</scope>
+	<tabTrigger>TWizardStep</tabTrigger>
+</snippet>

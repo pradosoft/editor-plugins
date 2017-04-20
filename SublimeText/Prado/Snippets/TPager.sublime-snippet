@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[<com:TPager ControlToPaginate="${2:dataGrid1}" OnPageIndexChanged="${3:pagerIndexChanged}" />$0]]></content>
+	<description>TPager</description>
+	<scope>text.html</scope>
+	<tabTrigger>TPager</tabTrigger>
+</snippet>

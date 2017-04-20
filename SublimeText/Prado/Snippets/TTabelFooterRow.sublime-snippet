@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[<com:TTableFooterRow>
+	$0
+</com:TTableFooterRow>]]></content>
+	<description>TTableFooterRow</description>
+	<scope>text.html</scope>
+	<tabTrigger>TTableFooterRow</tabTrigger>
+</snippet>

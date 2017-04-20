@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[<com:TActiveRadioButtonList ID="${1:radioButtonList1}" OnCallback="${3:$1_oncallback}">
+	${2:<com:TListItem Value="${3:value 1}" Text="${4:item 1}" />
+	<com:TListItem Value="${5:value 2}" Text="${6:item 2}" />}$0
+</com:TActiveRadioButtonList>]]></content>
+	<description>TActiveRadioButtonList</description>
+	<scope>text.html</scope>
+	<tabTrigger>TActiveRadioButtonList</tabTrigger>
+</snippet>

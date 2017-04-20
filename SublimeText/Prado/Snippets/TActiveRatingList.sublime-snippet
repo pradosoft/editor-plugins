@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[<com:TActiveRatingList ID="${1:ratingList1}" OnCallback="${3:$1_oncallback}" />$0]]></content>
+	<description>TActiveRatingList</description>
+	<scope>text.html</scope>
+	<tabTrigger>TActiveRatingList</tabTrigger>
+</snippet>

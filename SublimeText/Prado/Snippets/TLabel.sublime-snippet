@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[<com:TLabel ID="${1:label1}" ${2:Text="${3:Label 1}"} />$0]]></content>
+	<description>TLabel</description>
+	<scope>text.html</scope>
+	<tabTrigger>TLabel</tabTrigger>
+</snippet>

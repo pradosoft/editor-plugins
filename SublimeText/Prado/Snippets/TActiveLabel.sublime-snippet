@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[<com:TActiveLabel ID="${1:label1}" ${2:Text="${3:Label 1}"} />$0]]></content>
+	<description>TActiveLabel</description>
+	<scope>text.html</scope>
+	<tabTrigger>TActiveLabel</tabTrigger>
+</snippet>

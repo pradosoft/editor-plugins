@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[<com:TDropDownList ID="${1:dropDownList1}">
+	${2:<com:TListItem Value="${3:value 1}" Text="${4:item 1}" />
+	<com:TListItem Value="${5:value 2}" Text="${6:item 2}" />}$0
+</com:TDropDownList>]]></content>
+	<description>TDropDownList</description>
+	<scope>text.html</scope>
+	<tabTrigger>TDropDownList</tabTrigger>
+</snippet>

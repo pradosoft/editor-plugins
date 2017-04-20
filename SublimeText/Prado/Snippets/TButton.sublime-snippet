@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[<com:TButton ID="${1:button1}" Text="${2:Button Text}" OnClick="${3:${1}_Clicked}" />$0]]></content>
+	<description>TButton</description>
+	<scope>text.html</scope>
+	<tabTrigger>TButton</tabTrigger>
+</snippet>

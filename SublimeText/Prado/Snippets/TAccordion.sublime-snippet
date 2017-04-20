@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[<com:TAccordion ID="${1:accordion1}" ActiveViewIndex="${2:0}">
+	${3:<com:TAccordionView ID="${4:view1}" Caption="${5:caption1}">
+		${6:<!-- view1 content -->}
+	</com:TAccordionView>
+	<com:TAccordionView ID="${7:view2}" Caption="${8:caption2}">
+		${9:<!-- view2 content -->}
+	</com:TAccordionView>}$0
+</com:TAccordion>]]></content>
+	<description>TAccordion</description>
+	<scope>text.html</scope>
+	<tabTrigger>TAccordion</tabTrigger>
+</snippet>

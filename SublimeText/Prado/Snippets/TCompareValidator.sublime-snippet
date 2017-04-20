@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[<com:TCompareValidator
+	ControlToValidate="${1:controlIDToValidate}"
+	${2:ControlToCompare="${3:controlIDToCompareWith}"
+	DataType="${4:String}"
+	Operator="${5:Equal}"}
+	ErrorMessage="${6:value did not match}" />$0]]></content>
+	<description>TCompareValidator (TValidator)</description>
+	<scope>text.html</scope>
+	<tabTrigger>TValidator</tabTrigger>
+</snippet>

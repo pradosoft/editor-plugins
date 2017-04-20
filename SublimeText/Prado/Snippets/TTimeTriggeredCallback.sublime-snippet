@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[<com:TTimeTriggeredCallback Interval="${1:5}" OnCallback="${2:time_callback}" />]]></content>
+	<description>TTimeTriggeredCallback</description>
+	<scope>text.html</scope>
+	<tabTrigger>TTimeTriggeredCallback</tabTrigger>
+</snippet>

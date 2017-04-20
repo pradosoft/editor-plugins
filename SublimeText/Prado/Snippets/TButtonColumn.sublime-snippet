@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[<com:TButtonColumn CommandName="${2:Button Command}" Text="${3:Text on Button}" HeaderText="${4}" />$0]]></content>
+	<description>TButtonColumn</description>
+	<scope>text.html</scope>
+	<tabTrigger>TButtonColumn</tabTrigger>
+</snippet>

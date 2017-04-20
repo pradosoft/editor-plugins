@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[<com:TCustomValidator
+	ControlToValidate="${1:controlIDToValidate}"
+	OnServerValidate="${2:customValidate}"${3:
+	ClientValidationFunction="${4:clientSideCustomValidate}"}
+	ErrorMessage="${6:required}" />$0]]></content>
+	<description>TCustomValidator (TValidator)</description>
+	<scope>text.html</scope>
+	<tabTrigger>TValidator</tabTrigger>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[<com:TRadioButton ID="${1:radioButton1}" Text="${2:RadioButton Text}" />$0]]></content>
+	<description>TRadioButton</description>
+	<scope>text.html</scope>
+	<tabTrigger>TRadioButton</tabTrigger>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[<com:TStyleSheet StyleSheetUrl="${1:test.css}">
+	${2:<!-- insert content here or use StyleSheetUrl -->}
+</com:TStyleSheet>$0]]></content>
+	<description>TStyleSheet</description>
+	<scope>text.html</scope>
+	<tabTrigger>TStyleSheet</tabTrigger>
+</snippet>

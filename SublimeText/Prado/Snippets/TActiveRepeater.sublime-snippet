@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[<com:TActiveRepeater ID="${1:repeater1}" DataKeys="${2:Data key field}">
+	<prop:EmptyTemplate>
+		${3:<!-- content -->}
+	</prop:EmptyTemplate>
+	<prop:HeaderTemplate>
+		${4:<!-- content -->}
+	</prop:HeaderTemplate>
+	<prop:ItemTemplate>
+		${5:<!-- content -->}
+	</prop:ItemTemplate>
+	<prop:FooterTemplate>
+		${6:<!-- content -->}
+	</prop:FooterTemplate>
+</com:TActiveRepeater>]]></content>
+	<description>TActiveRepeater</description>
+	<scope>text.html</scope>
+	<tabTrigger>TActiveRepeater</tabTrigger>
+</snippet>

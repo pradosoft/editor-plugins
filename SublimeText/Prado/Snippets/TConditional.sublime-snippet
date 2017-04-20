@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[<com:TConditional Condition="${1:\$this->User->IsGuest}" >
+	<prop:TrueTemplate>
+		$0
+	</prop:TrueTemplate>
+	<prop:FalseTemplate>
+	</prop:FalseTemplate>
+</com:TConditional>]]></content>
+	<description>TConditional</description>
+	<scope>text.html</scope>
+	<tabTrigger>TConditional</tabTrigger>
+</snippet>

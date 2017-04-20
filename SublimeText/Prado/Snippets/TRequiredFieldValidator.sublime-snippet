@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[<com:TRequiredFieldValidator
+	ControlToValidate="${1:controlIDToValidate}"
+	ErrorMessage="${2:required}" />$0]]></content>
+	<description>TRequiredFieldValidator (TValidator)</description>
+	<scope>text.html</scope>
+	<tabTrigger>TValidator</tabTrigger>
+</snippet>

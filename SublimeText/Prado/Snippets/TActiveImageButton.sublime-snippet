@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[<com:TActiveImageButton
+	ID="${1:imageButton1}"
+	ImageUrl=<%~ ${2:hello_world.gif} %>
+	Text="${3:hello world}"
+	OnClick="${4:${1}_Clicked}" 
+	OnCallback="${5:${1}_oncallback}" 
+/>$0]]></content>
+	<description>TActiveImageButton</description>
+	<scope>text.html</scope>
+	<tabTrigger>TActiveImageButton</tabTrigger>
+</snippet>

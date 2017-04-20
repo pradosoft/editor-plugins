@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[<com:TValueTriggeredCallback ControlID="${1:ControlID}" PropertyName="${2:value}" OnCallback="${3:value_callback}" />]]></content>
+	<description>TValueTriggeredCallback</description>
+	<scope>text.html</scope>
+	<tabTrigger>TValueTriggeredCallback</tabTrigger>
+</snippet>

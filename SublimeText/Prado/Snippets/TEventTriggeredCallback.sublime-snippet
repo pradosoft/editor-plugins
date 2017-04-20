@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[<com:TEventTriggeredCallback ControlID="${1:ControlID}" EventName="${2:focus}" OnCallback="${3:event_callback}" />]]></content>
+	<description>TEventTriggeredCallback</description>
+	<scope>text.html</scope>
+	<tabTrigger>TEventTriggeredCallback</tabTrigger>
+</snippet>

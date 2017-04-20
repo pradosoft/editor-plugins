@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[<com:TForm ${1:ID="${2:form1}"}>
+	$0
+</com:TForm>]]></content>
+	<description>TForm</description>
+	<scope>text.html</scope>
+	<tabTrigger>TForm</tabTrigger>
+</snippet>

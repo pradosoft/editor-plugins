@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[<com:TView ID="${1:view1}">
+	${0:<!-- ${1} content -->}
+</com:TView>]]></content>
+	<description>TView</description>
+	<scope>text.html</scope>
+	<tabTrigger>TView</tabTrigger>
+</snippet>

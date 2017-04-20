@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[<com:TRepeater ID="${1:repeater1}" DataKeyField="${2:Data key field}">
+	<prop:EmptyTemplate>
+		${3:<!-- content -->}
+	</prop:EmptyTemplate>
+	<prop:HeaderTemplate>
+		${4:<!-- content -->}
+	</prop:HeaderTemplate>
+	<prop:ItemTemplate>
+		${5:<!-- content -->}
+	</prop:ItemTemplate>
+	<prop:FooterTemplate>
+		${6:<!-- content -->}
+	</prop:FooterTemplate>
+</com:TRepeater>]]></content>
+	<description>TRepeater</description>
+	<scope>text.html</scope>
+	<tabTrigger>TRepeater</tabTrigger>
+</snippet>

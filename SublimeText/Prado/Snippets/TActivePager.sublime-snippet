@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[<com:TActivePager
+	ControlToPaginate="${2:dataGrid1}"
+	OnPageIndexChanged="${3:pagerIndexChanged}"
+	OnCallback="${4:pagerCallback}"
+/>$0]]></content>
+	<description>TActivePager</description>
+	<scope>text.html</scope>
+	<tabTrigger>TActivePager</tabTrigger>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[<com:TActiveDropDownList ID="${1:dropDownList1}" OnCallback="${2:$1_oncallback}">
+	${3:<com:TListItem Value="${4:value 1}" Text="${5:item 1}" />
+	<com:TListItem Value="${6:value 2}" Text="${7:item 2}" />}$0
+</com:TActiveDropDownList>]]></content>
+	<description>TActiveDropDownList</description>
+	<scope>text.html</scope>
+	<tabTrigger>TActiveDropDownList</tabTrigger>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[<com:TCaptcha ID="${1:captcha1}" />
+<com:TTextBox ID="${1}input" />
+<com:TCaptchaValidator CaptchaControl="${1}" ControlToValidate="${1}input" ErrorMessage="${2:You are challenged!}" />$0]]></content>
+	<description>TCaptcha</description>
+	<scope>text.html</scope>
+	<tabTrigger>TCaptcha</tabTrigger>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[<prop:${1:PropertyName}>$0</prop:${1}>]]></content>
+	<description>Control Property</description>
+	<scope>text.html</scope>
+	<tabTrigger>prop</tabTrigger>
+</snippet>

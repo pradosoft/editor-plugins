@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[<com:THeader4 />$0]]></content>
+	<description>THeader4</description>
+	<scope>text.html</scope>
+	<tabTrigger>THeader4</tabTrigger>
+</snippet>

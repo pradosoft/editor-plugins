@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[<com:TContent ID="${1:Content}">
+	$0
+</com:TContent>]]></content>
+	<description>TContent</description>
+	<scope>text.html</scope>
+	<tabTrigger>TContent</tabTrigger>
+</snippet>

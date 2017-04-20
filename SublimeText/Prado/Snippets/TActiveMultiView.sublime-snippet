@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[<com:TActiveMultiView ID="${1:multiView1}" ActiveViewIndex="${2:0}">
+	${3:<com:TView ID="${4:view1}">
+		${5:<!-- view1 content -->}
+	</com:TView>
+	<com:TView ID="${6:view2}">
+		${7:<!-- view2 content -->}
+	</com:TView>}$0
+</com:TActiveMultiView>]]></content>
+	<description>TActiveMultiView</description>
+	<scope>text.html</scope>
+	<tabTrigger>TActiveMultiView</tabTrigger>
+</snippet>

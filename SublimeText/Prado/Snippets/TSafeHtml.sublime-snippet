@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[<com:TSafeHtml>
+	${0:<!-- content -->}
+</com:TSafeHtml>]]></content>
+	<description>TSafeHtml</description>
+	<scope>text.html</scope>
+	<tabTrigger>TSafeHtml</tabTrigger>
+</snippet>

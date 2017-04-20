@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[<com:TLiteralColumn DataField="${2:Field Name from Data Source}" HeaderText="${3:${2}}" />$0]]></content>
+	<description>TLiteralColumn</description>
+	<scope>text.html</scope>
+	<tabTrigger>TLiteralColumn</tabTrigger>
+</snippet>

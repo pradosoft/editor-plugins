@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[<com:TActiveTableRow>
+	${1:<com:TActiveTableCell>${2:cell 1}</com:TActiveTableCell>
+	<com:TActiveTableCell>${3:cell 2}</com:TActiveTableCell>}$0
+</com:TActiveTableRow>]]></content>
+	<description>TActiveTableRow</description>
+	<scope>text.html</scope>
+	<tabTrigger>TActiveTableRow</tabTrigger>
+</snippet>

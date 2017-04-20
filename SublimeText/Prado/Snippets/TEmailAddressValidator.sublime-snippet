@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[<com:TEmailAddressValidator
+	ControlToValidate="${1:controlIDToValidate}"
+	ErrorMessage="${2:email address required}" />$0]]></content>
+	<description>TEmailAddressValidator (TValidator)</description>
+	<scope>text.html</scope>
+	<tabTrigger>TValidator</tabTrigger>
+</snippet>

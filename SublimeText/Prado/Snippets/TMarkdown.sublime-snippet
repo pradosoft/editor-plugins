@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[<com:TMarkdown>
+	${0:<!-- content -->}
+</com:TMarkdown>]]></content>
+	<description>TMarkdown</description>
+	<scope>text.html</scope>
+	<tabTrigger>TMarkdown</tabTrigger>
+</snippet>

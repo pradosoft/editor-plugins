@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[<com:TRadioButtonList ID="${1:radioButtonList1}">
+	${2:<com:TListItem Value="${3:value 1}" Text="${4:item 1}" />
+	<com:TListItem Value="${5:value 2}" Text="${6:item 2}" />}$0
+</com:TRadioButtonList>]]></content>
+	<description>TRadioButtonList</description>
+	<scope>text.html</scope>
+	<tabTrigger>TRadioButtonList</tabTrigger>
+</snippet>

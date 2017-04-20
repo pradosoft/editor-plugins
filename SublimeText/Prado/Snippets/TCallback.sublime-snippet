@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[<com:TCallback ID="${1:callback1}" OnCallback="${2:$1_oncallback}" />
+<script type="text/javascript">
+	function do_callback1()
+	{
+		var request = <%= $this->${3:$1}->ActiveControl->Javascript %>;
+		request.dispatch();
+	}
+</script>]]></content>
+	<description>TCallback</description>
+	<scope>text.html</scope>
+	<tabTrigger>TCallback</tabTrigger>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[<com:TValidationSummary
+	HeaderText="${1:Validation error}"
+	Display="${2:Dynamic}" />$0]]></content>
+	<description>TValidationSummary</description>
+	<scope>text.html</scope>
+	<tabTrigger>TValidationSummary</tabTrigger>
+</snippet>

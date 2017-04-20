@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[<com:TActiveDataGrid ID="${1:grid1}" AutoGenerateColumns="${2:true}">
+	$0
+</com:TActiveDataGrid>]]></content>
+	<description>TActiveDataGrid</description>
+	<scope>text.html</scope>
+	<tabTrigger>TActiveDataGrid</tabTrigger>
+</snippet>

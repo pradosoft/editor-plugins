@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[<com:TListControlValidator
+	ControlToValidate="${1:controlIDToValidate}"
+	MinSelection="${2:2}"${3:
+	RequiredSelection="${4:value1}"}
+	ErrorMessage="${6:selection required}" />$0]]></content>
+	<description>TListControlValidator (TValidator)</description>
+	<scope>text.html</scope>
+	<tabTrigger>TValidator</tabTrigger>
+</snippet>

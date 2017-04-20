@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[<com:TAutoComplete
+	ID="${1:textbox1}"
+    OnSuggest="${2:$1_suggestNames}"
+    OnSuggestionSelected="${3:$1_suggestionSelected1}"
+    ResultPanel.CssClass="${4:acomplete}"
+    Suggestions.DataKeyField="${5:id}"
+>
+    <prop:Suggestions.ItemTemplate>
+    <li><%# ${6:\$this->Data['name']} %></li>
+    </prop:Suggestions.ItemTemplate>
+</com:TAutoComplete>$0]]></content>
+	<description>TAutoComplete</description>
+	<scope>text.html</scope>
+	<tabTrigger>TAutoComplete</tabTrigger>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[<com:TPlaceHolder ID="${1:placeHolder1}" />$0]]></content>
+	<description>TPlaceHolder</description>
+	<scope>text.html</scope>
+	<tabTrigger>TPlaceHolder</tabTrigger>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[<com:TImageButton
+	ID="${1:imageButton1}"
+	ImageUrl=<%~ ${2:hello_world.gif} %>
+	Text="${3:hello world}"
+	OnClick="${4:${1}_Clicked}" />$0]]></content>
+	<description>TImageButton</description>
+	<scope>text.html</scope>
+	<tabTrigger>TImageButton</tabTrigger>
+</snippet>

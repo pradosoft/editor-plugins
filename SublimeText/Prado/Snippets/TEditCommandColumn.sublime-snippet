@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[<com:TEditCommandColumn ButtonType="${1:LinkButton}" EditText="${2:Edit}" UpdateText="${3:Update}" CancelText="${4:Cancel}" />$0]]></content>
+	<description>TEditCommandColumn</description>
+	<scope>text.html</scope>
+	<tabTrigger>TEditCommandColumn</tabTrigger>
+</snippet>

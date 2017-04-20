@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[<com:TCheckBoxList ID="${1:checkBoxList1}">
+	${2:<com:TListItem Value="${3:value 1}" Text="${4:item 1}" />
+	<com:TListItem Value="${5:value 2}" Text="${6:item 2}" />}$0
+</com:TCheckBoxList>]]></content>
+	<description>TCheckBoxList</description>
+	<scope>text.html</scope>
+	<tabTrigger>TCheckBoxList</tabTrigger>
+</snippet>

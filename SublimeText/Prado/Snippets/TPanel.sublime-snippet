@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[<com:TPanel ID="${1:panel1}">
+	$0
+</com:TPanel>]]></content>
+	<description>TPanel</description>
+	<scope>text.html</scope>
+	<tabTrigger>TPanel</tabTrigger>
+</snippet>

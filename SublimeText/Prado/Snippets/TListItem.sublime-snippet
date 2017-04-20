@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[<com:TListItem Value="${1:value 1}" Text="${2:item 1}" />$0]]></content>
+	<description>TListItem</description>
+	<scope>text.html</scope>
+	<tabTrigger>TListItem</tabTrigger>
+</snippet>

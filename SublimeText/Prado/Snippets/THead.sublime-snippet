@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[<com:THead Title="${1:title1}" >
+	${2:<com:TMetaTag HttpEquiv="${3:Pragma}" Content="${4:no-cache}" />
+	<com:TMetaTag Name="${5:keywords}" Content="${6:Prado}" />}$0
+</com:THead>]]></content>
+	<description>THead</description>
+	<scope>text.html</scope>
+	<tabTrigger>THead</tabTrigger>
+</snippet>
