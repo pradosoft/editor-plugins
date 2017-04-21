@@ -166,6 +166,60 @@ contexts:
       captures:
         1: entity.other.attribute-name.html
 
+  prado-component-attr-dataformatstring:
+    - match: '(?:^|\s+)\b((DataFormatString)\b\s*(=)\s*)'
+      captures:
+        1: meta.attribute-with-value.style.html
+        2: entity.other.attribute-name.style.html
+        3: punctuation.separator.key-value.html
+      push:
+        - match: '"#'
+          scope: string.quoted.double punctuation.definition.string.begin.html
+          set:
+            - meta_scope: meta.attribute-with-value.style.html
+            - meta_content_scope: source.php
+            - match: '"'
+              scope: string.quoted.double punctuation.definition.string.end.html
+              pop: true
+            - match: ''
+              push:
+                - meta_content_scope: source.php.embedded.html
+                - include: 'scope:source.php'
+              with_prototype:
+                - match: '(?=")'
+                  pop: true
+        - match: "'#"
+          scope: string.quoted.single punctuation.definition.string.begin.html
+          set:
+            - meta_scope: meta.attribute-with-value.style.html
+            - meta_content_scope: source.php
+            - match: "'"
+              scope: string.quoted.single punctuation.definition.string.end.html
+              pop: true
+            - match: ''
+              push:
+                - meta_content_scope: source.php.embedded.html
+                - include: 'scope:source.php'
+              with_prototype:
+                - match: "(?=')"
+                  pop: true
+        - match: '"'
+          scope: string.quoted.double punctuation.definition.string.begin.html
+          set:
+            - meta_scope: meta.attribute-with-value.style.html
+            - meta_content_scope: string.quoted.double
+            - match: '"'
+              scope: string.quoted.double punctuation.definition.string.end.html
+              pop: true
+        - match: "'"
+          scope: string.quoted.single punctuation.definition.string.begin.html
+          set:
+            - meta_scope: meta.attribute-with-value.style.html
+            - meta_content_scope: string.quoted.single
+            - match: "'"
+              scope: string.quoted.single punctuation.definition.string.end.html
+              pop: true
+
   prado-component-attr-style:
     - match: '(?:^|\s+)\b((Style)\b\s*(=)\s*)'
       captures:
@@ -264,6 +318,7 @@ contexts:
   prado-component-stuff:
     - include: prado-component-attr-style
     - include: prado-component-attr-jsevent
+    - include: prado-component-attr-dataformatstring
     - include: prado-component-attr-generic
     - include: prado-component-prop
 # Inline tags
