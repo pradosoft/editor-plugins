@@ -9,6 +9,7 @@ contexts:
       push: "Packages/HTML/HTML.sublime-syntax"
       with_prototype:
         - include: prado-entities
+        - include: prado-inline-tags
 
   prado-entities:
 # Comments
@@ -20,21 +21,6 @@ contexts:
           pop: true
         - match: "---"
           scope: invalid.illegal.bad-comments-or-CDATA.prado
-    - match: <%(#|=|%)
-      scope: punctuation.definition.embedded.begin.prado
-      push:
-        - meta_scope: source.prado.embedded.tag
-        - match: '%>'
-          pop: true
-          scope: punctuation.definition.embedded.end.prado
-        - match: ''
-          scope: source.prado.embedded.databind
-          push:
-            - meta_content_scope: source.php.embedded.html
-            - include: 'scope:source.php'
-          with_prototype:
-             - match: (?=%>)
-               pop: true
     - match: <%@
       scope: punctuation.definition.templateproperty.begin.prado
       push:
@@ -51,22 +37,6 @@ contexts:
         - match: '%>'
           pop: true
           scope: punctuation.definition.templateinclude.end.prado
-    - match: <%(\$|~|/)
-      scope: punctuation.definition.templatetag.begin.prado
-      push:
-        - meta_scope: meta.tag.templatetag.prado
-        - meta_content_scope: meta.tag.templatetag-value.prado
-        - match: '%>'
-          pop: true
-          scope: punctuation.definition.templatetag.end.prado 
-    - match: <%\[
-      scope: punctuation.definition.localizationtag.begin.prado
-      push:
-        - meta_scope: meta.tag.localizationtag.prado
-        - meta_content_scope: meta.tag.localizationtag-value.prado
-        - match: '\]%>'
-          pop: true
-          scope: punctuation.definition.localizationtag.end.prado
 # TClientScript
     - match: '(<)(com:)(TClientScript)\b(?![^>]*/>)'
       captures:
@@ -128,7 +98,7 @@ contexts:
               pop: true
             - include: prado-component-stuff
 # Generic components
-    - match: '(<)(com:)([a-zA-z0-9.]+)\b(?![^>]*/>)'
+    - match: '(<)(com:|prop:)([a-zA-z0-9.]+)\b(?![^>]*/>)'
       captures:
         0: meta.tag.component.generic.begin.prado
         1: punctuation.definition.tag.begin.html
@@ -145,46 +115,25 @@ contexts:
           pop: true
         - match: '>'
           scope: meta.tag.component.generic.begin.prado punctuation.definition.tag.end.html
-          push: "Packages/HTML/HTML.sublime-syntax"
-          with_prototype:
-             - match: (?=</com:)
-               pop: true
-             - include: prado-entities
-        - match: ''
-          push:
-            - meta_scope: meta.tag.component.generic.begin.prado
-            - match: '(?=>)'
-              pop: true
-            - include: prado-component-stuff
-# Component properties
-    - match: '(<)(prop:)([a-zA-z0-9.]+)\b(?![^>]*/>)'
-      captures:
-        0: meta.tag.property.generic.begin.prado
-        1: punctuation.definition.tag.begin.html
-        2: entity.name.property.prefix.prado
-        3: entity.name.property.generic.prado
-      push:
-        - match: (</prop:)([a-zA-z0-9\.]+)(>)
-          captures:
-            0: meta.tag.property.generic.end.prado
-            1: punctuation.definition.tag.begin.html
-            2: entity.name.property.prefix.prado
-            3: entity.name.property.generic.prado
-            4: punctuation.definition.tag.end.html
           pop: true
-        - match: '>'
-          scope: meta.tag.property.generic.begin.prado punctuation.definition.tag.end.html
-          push: "Packages/HTML/HTML.sublime-syntax"
-          with_prototype:
-             - match: (?=</prop:)
-               pop: true
-             - include: prado-entities
         - match: ''
           push:
             - meta_scope: meta.tag.component.generic.begin.prado
             - match: '(?=>)'
               pop: true
             - include: prado-component-stuff
+    - match: (<)(com:)([a-zA-z0-9.]+)\b
+      captures:
+        0: meta.tag.component.generic.begin.prado
+        1: punctuation.definition.tag.begin.html
+        2: entity.name.tag.prefix.prado
+        3: entity.name.tag.inline.generic.prado
+      push:
+        - meta_scope: meta.tag.inline.generic.prado
+        - match: '(?: ?/)?>'
+          scope: punctuation.definition.tag.end.html
+          pop: true
+        - include: prado-component-stuff
 # Component attributes
   prado-component-attr-generic:
     - match: '(?:^|\s+)(([a-zA-Z0-9:\-_.]+)\s*(=)\s*)'
@@ -200,7 +149,7 @@ contexts:
             - match: '"'
               scope: punctuation.definition.string.end.html
               pop: true
-            - include: attribute-entities
+            - include: prado-inline-tags
         - match: "'"
           scope: punctuation.definition.string.begin.html
           set:
@@ -208,7 +157,7 @@ contexts:
             - match: "'"
               scope: punctuation.definition.string.end.html
               pop: true
-            - include: attribute-entities
+            - include: prado-inline-tags
         - match: '(?:[^\s<>/''"]|/(?!>))+'
           scope: meta.attribute-with-value.html string.unquoted.html
         - match: ''
@@ -317,3 +266,46 @@ contexts:
     - include: prado-component-attr-jsevent
     - include: prado-component-attr-generic
     - include: prado-component-prop
+# Inline tags
+
+  prado-tag-embeddedphp:
+    - match: <%(#|=|%)
+      scope: punctuation.definition.embedded.begin.prado
+      push:
+        - meta_scope: meta.tag.embedded.prado
+        - match: '%>'
+          pop: true
+          scope: punctuation.definition.embedded.end.prado
+        - match: ''
+          scope: source.prado.embedded.databind
+          push:
+            - meta_content_scope: source.php.embedded.html
+            - include: 'scope:source.php'
+          with_prototype:
+             - match: (?=%>)
+               pop: true
+
+  prado-tag-templatetag:
+    - match: <%(\$|~|/)
+      scope: punctuation.definition.templatetag.begin.prado
+      push:
+        - meta_scope: meta.tag.templatetag.prado
+        - meta_content_scope: meta.tag.templatetag-value.prado
+        - match: '%>'
+          pop: true
+          scope: punctuation.definition.templatetag.end.prado 
+
+  prado-tag-localizationtag:
+    - match: <%\[
+      scope: punctuation.definition.localizationtag.begin.prado
+      push:
+        - meta_scope: meta.tag.localizationtag.prado
+        - meta_content_scope: meta.tag.localizationtag-value.prado
+        - match: '\]%>'
+          pop: true
+          scope: punctuation.definition.localizationtag.end.prado
+
+  prado-inline-tags:
+    - include: prado-tag-embeddedphp
+    - include: prado-tag-templatetag
+    - include: prado-tag-localizationtag
