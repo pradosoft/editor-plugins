@@ -335,7 +335,7 @@ contexts:
           scope: source.prado.embedded.databind
           push:
             - meta_content_scope: source.php.embedded.html
-            - include: 'scope:source.php'
+          #  - include: 'scope:source.php'
           with_prototype:
              - match: (?=%>)
                pop: true
@@ -348,7 +348,7 @@ contexts:
         - meta_content_scope: meta.tag.templatetag-value.prado
         - match: '%>'
           pop: true
-          scope: punctuation.definition.templatetag.end.prado 
+          scope: punctuation.definition.templatetag.end.prado
 
   prado-tag-localizationtag:
     - match: <%\[
