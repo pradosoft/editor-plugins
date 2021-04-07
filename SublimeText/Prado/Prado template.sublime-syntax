@@ -85,12 +85,9 @@ contexts:
           pop: true
         - match: '>'
           scope: meta.tag.component.stylesheet.begin.prado punctuation.definition.tag.end.html
-          push:
-            - meta_content_scope: source.css.embedded.html
-            - include: 'scope:source.css'
-          with_prototype:
-             - match: (?=</com:TStyleSheet)
-               pop: true
+          embed: scope:source.css
+          embed_scope: source.css.embedded.html
+          escape: (?=</com:TStyleSheet)
         - match: ''
           push:
             - meta_scope: meta.tag.component.stylesheet.begin.prado
@@ -182,12 +179,9 @@ contexts:
               scope: string.quoted.double punctuation.definition.string.end.html
               pop: true
             - match: ''
-              push:
-                - meta_content_scope: source.php.embedded.html
-                - include: 'scope:source.php'
-              with_prototype:
-                - match: '(?=")'
-                  pop: true
+              embed: scope:source.php
+              embed_scope: source.php.embedded.html
+              escape: '(?=")'
         - match: "'#"
           scope: string.quoted.single punctuation.definition.string.begin.html
           set:
@@ -197,12 +191,9 @@ contexts:
               scope: string.quoted.single punctuation.definition.string.end.html
               pop: true
             - match: ''
-              push:
-                - meta_content_scope: source.php.embedded.html
-                - include: 'scope:source.php'
-              with_prototype:
-                - match: "(?=')"
-                  pop: true
+              embed: scope:source.php
+              embed_scope: source.php.embedded.html
+              escape: "(?=')"
         - match: '"'
           scope: string.quoted.double punctuation.definition.string.begin.html
           set:
@@ -294,11 +285,9 @@ contexts:
               scope: string.quoted.double punctuation.definition.string.end.html
               pop: true
             - match: ''
-              push: 'scope:source.js'
-              with_prototype:
-                - match: '(?=")'
-                  pop: true
-                - include: attribute-entities
+              embed: scope:source.js
+              embed_scope: source.js.embedded.html
+              escape: '(?=")'
         - match: "'"
           scope: string.quoted.single punctuation.definition.string.begin.html
           set:
@@ -307,11 +296,9 @@ contexts:
               scope: string.quoted.single punctuation.definition.string.end.html
               pop: true
             - match: ''
-              push: 'scope:source.js'
-              with_prototype:
-                - match: "(?=')"
-                  pop: true
-                - include: attribute-entities
+              embed: scope:source.js
+              embed_scope: source.js.embedded.html
+              escape: '(?=")'
         - match: ''
           pop: true
 
@@ -333,12 +320,9 @@ contexts:
           scope: punctuation.definition.embedded.end.prado
         - match: ''
           scope: source.prado.embedded.databind
-          push:
-            - meta_content_scope: source.php.embedded.html
-          #  - include: 'scope:source.php'
-          with_prototype:
-             - match: (?=%>)
-               pop: true
+          embed: scope:source.php
+          embed_scope: source.php.embedded.html
+          escape: (?=%>)
 
   prado-tag-templatetag:
     - match: <%(\$|~|/)
