@@ -38,7 +38,7 @@ contexts:
           pop: true
           scope: punctuation.definition.templateinclude.end.prado
 # TClientScript
-    - match: '(<)(com:)(TClientScript)\b(?![^>]*/>)'
+    - match: '(<)(com:)(TClientScript)\b(?![^>]*\/>)'
       captures:
         0: meta.tag.component.clientscript.begin.prado
         1: punctuation.definition.tag.begin.html
@@ -68,7 +68,7 @@ contexts:
               pop: true
             - include: prado-component-stuff
 # TStyleSheet
-    - match: '(<)(com:)(TStyleSheet)\b(?![^>]*/>)'
+    - match: '(<)(com:)(TStyleSheet)\b(?![^>]*\/>)'
       captures:
         0: meta.tag.component.stylesheet.begin.prado
         1: punctuation.definition.tag.begin.html
@@ -95,7 +95,7 @@ contexts:
               pop: true
             - include: prado-component-stuff
 # Generic components
-    - match: '(<)(com:|prop:)([a-zA-z0-9.]+)\b(?![^>]*/>)'
+    - match: '(<)(com:|prop:)([a-zA-z0-9.]+)\b(?![^>]*\/>)'
       captures:
         0: meta.tag.component.generic.begin.prado
         1: punctuation.definition.tag.begin.html
