@@ -3,13 +3,37 @@
 name: Prado template
 file_extensions: [tpl, page]
 scope: source.prado
+version: 2
+extends: Packages/HTML/HTML.sublime-syntax
 contexts:
+  # main: the whole file contents must be considered inside prado context
   main:
-    - match: ""
-      push: "Packages/HTML/HTML.sublime-syntax"
-      with_prototype:
-        - include: prado-entities
-        - include: prado-inline-tags
+    - match: ''
+      push: prado
+
+  # the prado context checks for pado entities and falls back to plain html
+  prado:
+    - include: prado-entities
+    - include: html
+
+  # force detection of prado-inline-tags inside all code
+  prototype:
+    - include: prado-inline-tags
+
+  # force detection of prado-inline-tags inside html code (interpolations)
+  tag-attribute-value-content:
+    - meta_prepend: true
+    - include: prado-inline-tags
+
+  strings-common-content:
+    - meta_prepend: true
+    - include: prado-inline-tags
+
+  cdata-content:
+    - meta_prepend: true
+    - include: prado-inline-tags
+
+# PRADO COMPONENTS DEFINITIONS
 
   prado-entities:
 # Comments
@@ -21,6 +45,7 @@ contexts:
           pop: true
         - match: "---"
           scope: invalid.illegal.bad-comments-or-CDATA.prado
+# Template Properties
     - match: <%@
       scope: punctuation.definition.templateproperty.begin.prado
       push:
@@ -29,6 +54,7 @@ contexts:
           pop: true
           scope: punctuation.definition.templateproperty.end.prado
         - include: prado-component-attr-generic
+# Template Includes
     - match: <%include
       scope: punctuation.definition.templateinclude.begin.prado
       push:
@@ -38,62 +64,57 @@ contexts:
           pop: true
           scope: punctuation.definition.templateinclude.end.prado
 # TClientScript
-    - match: '(<)(com:)(TClientScript)\b(?![^>]*\/>)'
+    - match: '(<)(com:)(TClientScript)\b'
       captures:
         0: meta.tag.component.clientscript.begin.prado
         1: punctuation.definition.tag.begin.html
         2: entity.name.tag.prefix.prado
         3: entity.name.tag.clientscript.prado
       push:
-        - match: '(</)(com:)(TClientScript)(>)'
-          captures:
-            0: meta.tag.component.clientscript.end.prado
-            1: punctuation.definition.tag.begin.html
-            2: entity.name.tag.prefix.prado
-            3: entity.name.tag.clientscript.prado
-            4: punctuation.definition.tag.end.html
-          pop: true
-        - match: '>'
-          scope: meta.tag.component.clientscript.begin.prado punctuation.definition.tag.end.html
-          push:
-            - meta_content_scope: source.js.embedded.html
-            - include: 'scope:source.js'
-          with_prototype:
-             - match: (?=</com:TClientScript)
-               pop: true
         - match: ''
+          scope: meta.tag.component.clientscript.contents.prado
           push:
-            - meta_scope: meta.tag.component.clientscript.begin.prado
-            - match: '(?=>)'
-              pop: true
             - include: prado-component-stuff
+            - match: '/>'
+              pop: 2
+              scope: meta.tag.component.clientscript.end.prado punctuation.definition.tag.end.html
+            - match: '>'
+              pop: 2
+              embed: scope:source.js
+              embed_scope: source.js.embedded.html
+              escape: '(</)(com:)(TClientScript)(>)'
+              escape_captures:
+                0: meta.tag.component.clientscript.end.prado
+                1: punctuation.definition.tag.begin.html
+                2: entity.name.tag.prefix.prado
+                3: entity.name.tag.clientscript.prado
+                4: punctuation.definition.tag.end.html
 # TStyleSheet
-    - match: '(<)(com:)(TStyleSheet)\b(?![^>]*\/>)'
+    - match: '(<)(com:)(TStyleSheet)\b'
       captures:
         0: meta.tag.component.stylesheet.begin.prado
         1: punctuation.definition.tag.begin.html
         2: entity.name.tag.prefix.prado
         3: entity.name.tag.stylesheet.prado
       push:
-        - match: '(</)(com:)(TStyleSheet)(>)'
-          captures:
-            0: meta.tag.component.stylesheet.end.prado
-            1: punctuation.definition.tag.begin.html
-            2: entity.name.tag.prefix.prado
-            3: entity.name.tag.stylesheet.prado
-            4: punctuation.definition.tag.end.html
-          pop: true
-        - match: '>'
-          scope: meta.tag.component.stylesheet.begin.prado punctuation.definition.tag.end.html
-          embed: scope:source.css
-          embed_scope: source.css.embedded.html
-          escape: (?=</com:TStyleSheet)
         - match: ''
+          scope: meta.tag.component.stylesheet.contents.prado
           push:
-            - meta_scope: meta.tag.component.stylesheet.begin.prado
-            - match: '(?=>)'
-              pop: true
             - include: prado-component-stuff
+            - match: '/>'
+              pop: 2
+              scope: meta.tag.component.stylesheet.end.prado punctuation.definition.tag.end.html
+            - match: '>'
+              pop: 2
+              embed: scope:source.css
+              embed_scope: source.css.embedded.html
+              escape: '(</)(com:)(TStyleSheet)(>)'
+              escape_captures:
+                0: meta.tag.component.stylesheet.end.prado
+                1: punctuation.definition.tag.begin.html
+                2: entity.name.tag.prefix.prado
+                3: entity.name.tag.stylesheet.prado
+                4: punctuation.definition.tag.end.html
 # Generic components
     - match: '(<)(com:|prop:)([a-zA-z0-9.]+)\b(?![^>]*\/>)'
       captures:
@@ -146,7 +167,6 @@ contexts:
             - match: '"'
               scope: punctuation.definition.string.end.html
               pop: true
-            - include: prado-inline-tags
         - match: "'"
           scope: punctuation.definition.string.begin.html
           set:
@@ -154,7 +174,6 @@ contexts:
             - match: "'"
               scope: punctuation.definition.string.end.html
               pop: true
-            - include: prado-inline-tags
         - match: '(?:[^\s<>/''"]|/(?!>))+'
           scope: meta.attribute-with-value.html string.unquoted.html
         - match: ''
@@ -162,6 +181,8 @@ contexts:
     - match: '\s+([a-zA-Z0-9:\-_.]+)'
       captures:
         1: entity.other.attribute-name.html
+
+# PRADO ATTRIBUTES DEFINITIONS
 
   prado-component-attr-dataformatstring:
     - match: '(?:^|\s+)\b((DataFormatString)\b\s*(=)\s*)'
@@ -212,52 +233,23 @@ contexts:
               pop: true
 
   prado-component-attr-style:
-    - match: '(?:^|\s+)\b((Style)\b\s*(=)\s*)'
+    - match: '(?:^|\s+)\b((Style)\b\s*(=)\s*)(")'
       captures:
         1: meta.attribute-with-value.style.html
         2: entity.other.attribute-name.style.html
         3: punctuation.separator.key-value.html
+        4: punctuation.style.embedded.begin.prado
+      scope: meta.attribute.style.begin.prado
       push:
+        - meta_scope: meta.style.embedded.prado
         - match: '"'
-          scope: string.quoted.double punctuation.definition.string.begin.html
-          set:
-            - meta_scope: meta.attribute-with-value.style.html
-            - meta_content_scope: source.css
-            - match: '"'
-              scope: string.quoted.double punctuation.definition.string.end.html
-              pop: true
-            - match: ''
-              # An anonymous context with an include is used here rather than
-              # a direct push, so that if the target context isn't found it's
-              # only a warning rather than an error. This will likely happen
-              # if the user has replaced the default CSS syntax
-              push:
-                - include: 'CSS.sublime-syntax#rule-list-body'
-              with_prototype:
-                - match: '(?=")'
-                  pop: true
-                - include: attribute-entities
-        - match: "'"
-          scope: string.quoted.single punctuation.definition.string.begin.html
-          set:
-            - meta_scope: meta.attribute-with-value.style.html
-            - meta_content_scope: source.css
-            - match: "'"
-              scope: string.quoted.single punctuation.definition.string.end.html
-              pop: true
-            - match: ''
-              # An anonymous context with an include is used here rather than
-              # a direct push, so that if the target context isn't found it's
-              # only a warning rather than an error. This will likely happen
-              # if the user has replaced the default CSS syntax
-              push:
-                - include: 'CSS.sublime-syntax#rule-list-body'
-              with_prototype:
-                - match: "(?=')"
-                  pop: true
-                - include: attribute-entities
-        - match: ''
           pop: true
+          scope: punctuation.style.embedded.end.prado
+        - match: ''
+          scope: source.prado.embedded.style
+          embed: scope:source.css#rule-list-body
+          embed_scope: source.css.embedded.html
+          escape: (?=")
 
   prado-component-attr-jsevent:
     - match: |-
@@ -298,7 +290,7 @@ contexts:
             - match: ''
               embed: scope:source.js
               embed_scope: source.js.embedded.html
-              escape: '(?=")'
+              escape: "(?=')"
         - match: ''
           pop: true
 
@@ -307,8 +299,8 @@ contexts:
     - include: prado-component-attr-jsevent
     - include: prado-component-attr-dataformatstring
     - include: prado-component-attr-generic
-    - include: prado-component-prop
-# Inline tags
+
+# PRADO INLINE TAGS
 
   prado-tag-embeddedphp:
     - match: <%(#|=|%)
