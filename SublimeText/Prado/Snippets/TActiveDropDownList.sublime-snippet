@@ -4,6 +4,6 @@
 	<com:TListItem Value="${6:value 2}" Text="${7:item 2}" />}$0
 </com:TActiveDropDownList>]]></content>
 	<description>TActiveDropDownList</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TActiveDropDownList</tabTrigger>
 </snippet>

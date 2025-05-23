@@ -3,6 +3,6 @@
 	$0
 </com:TTableFooterRow>]]></content>
 	<description>TTableFooterRow</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TTableFooterRow</tabTrigger>
 </snippet>

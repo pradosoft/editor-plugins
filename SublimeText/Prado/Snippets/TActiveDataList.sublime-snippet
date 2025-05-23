@@ -3,6 +3,6 @@
 	$0
 </com:TActiveDataList>]]></content>
 	<description>TActiveDataList</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TActiveDataList</tabTrigger>
 </snippet>

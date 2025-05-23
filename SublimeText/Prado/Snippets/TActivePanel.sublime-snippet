@@ -3,6 +3,6 @@
 	$0
 </com:TActivePanel>]]></content>
 	<description>TActivePanel</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TActivePanel</tabTrigger>
 </snippet>

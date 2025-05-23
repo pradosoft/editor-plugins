@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[<com:TActiveHyperLink NavigateUrl="${1:https://github.com/pradosoft/prado}" Text="${2:Prado framework}" />$0]]></content>
 	<description>TActiveHyperLink</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TActiveHyperLink</tabTrigger>
 </snippet>

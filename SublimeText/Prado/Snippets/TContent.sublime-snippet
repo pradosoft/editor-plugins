@@ -3,6 +3,6 @@
 	$0
 </com:TContent>]]></content>
 	<description>TContent</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TContent</tabTrigger>
 </snippet>

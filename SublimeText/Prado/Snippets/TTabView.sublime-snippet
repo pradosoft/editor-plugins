@@ -3,6 +3,6 @@
 	${0:<!-- ${1} content -->}
 </com:TTabView>]]></content>
 	<description>TTabView</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TTabView</tabTrigger>
 </snippet>

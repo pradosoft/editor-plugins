@@ -3,6 +3,6 @@
 	$0
 </com:TDataGrid>]]></content>
 	<description>TDataGrid</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TDataGrid</tabTrigger>
 </snippet>

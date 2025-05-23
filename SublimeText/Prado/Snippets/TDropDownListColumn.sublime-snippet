@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[<com:TDropDownListColumn DataTextField="${2:Field Name from Data Source}" DataValueField="${3:Field Name from Data Source}" HeaderText="${4:Dropdown}" />$0]]></content>
 	<description>TDropDownListColumn</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TDropDownListColumn</tabTrigger>
 </snippet>

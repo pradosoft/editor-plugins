@@ -10,6 +10,6 @@
 <!-- content -->
 </com:TDropContainer>]]></content>
 	<description>TDropContainer</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TDropContainer</tabTrigger>
 </snippet>

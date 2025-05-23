@@ -3,6 +3,6 @@
 	${0:<!-- content -->}
 </com:TSafeHtml>]]></content>
 	<description>TSafeHtml</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TSafeHtml</tabTrigger>
 </snippet>

@@ -6,6 +6,6 @@
 	${5:MaxValue="${6:5}"}
 	ErrorMessage="${7:out of range}" />$0]]></content>
 	<description>TRangeValidator (TValidator)</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TValidator</tabTrigger>
 </snippet>

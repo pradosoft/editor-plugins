@@ -5,6 +5,6 @@
 	AlternateText="${4:Navigate to Prado framework}"
 	Coordinates="${5:200,137,255}" />$0]]></content>
 	<description>TPolygonHotSpot (THotSpot)</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>THotSpot</tabTrigger>
 </snippet>

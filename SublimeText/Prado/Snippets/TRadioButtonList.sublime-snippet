@@ -4,6 +4,6 @@
 	<com:TListItem Value="${5:value 2}" Text="${6:item 2}" />}$0
 </com:TRadioButtonList>]]></content>
 	<description>TRadioButtonList</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TRadioButtonList</tabTrigger>
 </snippet>

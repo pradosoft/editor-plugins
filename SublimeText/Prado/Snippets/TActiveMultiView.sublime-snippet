@@ -8,6 +8,6 @@
 	</com:TView>}$0
 </com:TActiveMultiView>]]></content>
 	<description>TActiveMultiView</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TActiveMultiView</tabTrigger>
 </snippet>

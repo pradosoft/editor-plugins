@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[<com:TFlushOutput ID="${1:flushOutput1}" />$0]]></content>
 	<description>TFlushOutput</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TFlushOutput</tabTrigger>
 </snippet>

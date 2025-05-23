@@ -3,6 +3,6 @@
 	$0
 </com:TWizardStep>]]></content>
 	<description>TWizardStep</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TWizardStep</tabTrigger>
 </snippet>

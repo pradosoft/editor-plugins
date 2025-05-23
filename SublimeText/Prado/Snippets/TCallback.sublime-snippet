@@ -8,6 +8,6 @@
 	}
 </script>]]></content>
 	<description>TCallback</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TCallback</tabTrigger>
 </snippet>

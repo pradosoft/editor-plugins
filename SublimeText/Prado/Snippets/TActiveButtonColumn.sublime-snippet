@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[<com:TActiveButtonColumn CommandName="${2:Button Command}" Text="${3:Text on Button}" HeaderText="${4}" />$0]]></content>
 	<description>TActiveButtonColumn</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TActiveButtonColumn</tabTrigger>
 </snippet>

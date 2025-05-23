@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[<com:TTextBox ID="${1:textbox1}" />$0]]></content>
 	<description>TTextBox</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TTextBox</tabTrigger>
 </snippet>

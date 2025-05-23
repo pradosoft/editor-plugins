@@ -4,6 +4,6 @@
 	RegularExpression="${2:\w{5,\}}"
 	ErrorMessage="${7:mismatch}" />$0]]></content>
 	<description>TRegularExpressionValidator (TValidator)</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TValidator</tabTrigger>
 </snippet>

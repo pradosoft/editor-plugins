@@ -5,6 +5,6 @@
 	RequiredSelection="${4:value1}"}
 	ErrorMessage="${6:selection required}" />$0]]></content>
 	<description>TListControlValidator (TValidator)</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TValidator</tabTrigger>
 </snippet>

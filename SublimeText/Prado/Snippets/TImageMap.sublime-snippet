@@ -11,6 +11,6 @@ ${5:<com:TTCircleHotSpot
 	X="${10:80}" Y="${11:80}" Radius="${12:55}" />}$0
 </com:TImageMap>]]></content>
 	<description>TImageMap</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TImageMap</tabTrigger>
 </snippet>

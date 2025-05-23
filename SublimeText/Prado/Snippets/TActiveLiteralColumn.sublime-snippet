@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[<com:TActiveLiteralColumn DataField="${2:Field Name from Data Source}" HeaderText="${3:${2}}" />$0]]></content>
 	<description>TActiveLiteralColumn</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TActiveLiteralColumn</tabTrigger>
 </snippet>

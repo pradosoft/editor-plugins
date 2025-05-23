@@ -4,6 +4,6 @@
 	ControlToValidate="${2:controlIDToValidate}"
 	ErrorMessage="${3:You are challenged!}" />$0]]></content>
 	<description>TReCaptchaValidator (TValidator)</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TValidator</tabTrigger>
 </snippet>

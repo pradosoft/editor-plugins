@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[<com:THtmlArea ID="${1:htmlArea1}" Width="${2:500px}" Height="${3:250px}" />$0]]></content>
 	<description>THtmlArea</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>THtmlArea</tabTrigger>
 </snippet>

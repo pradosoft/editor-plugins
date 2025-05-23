@@ -10,6 +10,6 @@
 	</com:TTableRow>}
 </com:TTable>]]></content>
 	<description>TTable</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TTable</tabTrigger>
 </snippet>

@@ -8,6 +8,6 @@
 	</com:TTabView>}$0
 </com:TTabPanel>]]></content>
 	<description>TTabPanel</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TTabPanel</tabTrigger>
 </snippet>

@@ -3,6 +3,6 @@
 	${0:<!-- content -->}
 </com:TTextHighlighter>]]></content>
 	<description>TTextHighlighter</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TTextHighlighter</tabTrigger>
 </snippet>

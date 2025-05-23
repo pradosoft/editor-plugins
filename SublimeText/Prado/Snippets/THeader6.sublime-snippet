@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[<com:THeader6 />$0]]></content>
 	<description>THeader6</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>THeader6</tabTrigger>
 </snippet>

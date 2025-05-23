@@ -2,6 +2,6 @@
 	<content><![CDATA[<com:TActiveButton ID="${2:button1}" Text="${3:Button 1}" 
 	OnClick="${5:$2_onclick}" OnCallback="${6:$2_oncallback}" />$0]]></content>
 	<description>TActiveButton</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TActiveButton</tabTrigger>
 </snippet>

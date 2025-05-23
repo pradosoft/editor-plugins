@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[<com:TColorPicker ID="${1:colorpicker1}" Mode="${2:Basic}" />$0]]></content>
 	<description>TColorPicker</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TColorPicker</tabTrigger>
 </snippet>

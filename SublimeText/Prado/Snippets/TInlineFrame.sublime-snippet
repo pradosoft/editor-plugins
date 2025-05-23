@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[<com:TInlineFrame FrameUrl="${1:http://www.google.com/}" />$0]]></content>
 	<description>TInlineFrame</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TInlineFrame</tabTrigger>
 </snippet>

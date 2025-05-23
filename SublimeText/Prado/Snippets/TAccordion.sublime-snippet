@@ -8,6 +8,6 @@
 	</com:TAccordionView>}$0
 </com:TAccordion>]]></content>
 	<description>TAccordion</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TAccordion</tabTrigger>
 </snippet>

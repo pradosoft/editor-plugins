@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[<com:TContentPlaceHolder ID="${1:Content}" />$0]]></content>
 	<description>TContentPlaceHolder</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TContentPlaceHolder</tabTrigger>
 </snippet>

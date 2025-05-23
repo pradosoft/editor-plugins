@@ -8,6 +8,6 @@
 	</prop:EditItemTemplate>
 </com:TTemplateColumn>$0]]></content>
 	<description>TTemplateColumn</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TTemplateColumn</tabTrigger>
 </snippet>

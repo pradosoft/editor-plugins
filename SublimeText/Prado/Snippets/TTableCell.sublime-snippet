@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[<com:TTableCell>${1:cell 1}</com:TTableCell>$0]]></content>
 	<description>TTableCell</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TTableCell</tabTrigger>
 </snippet>

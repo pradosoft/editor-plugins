@@ -11,6 +11,6 @@
     </prop:Suggestions.ItemTemplate>
 </com:TAutoComplete>$0]]></content>
 	<description>TAutoComplete</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TAutoComplete</tabTrigger>
 </snippet>

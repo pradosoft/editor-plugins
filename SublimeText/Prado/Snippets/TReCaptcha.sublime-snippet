@@ -3,6 +3,6 @@
 <com:TTextBox ID="${1}input" />
 <com:TReCaptchaValidator CaptchaControl="${1}" ControlToValidate="${1}input" ErrorMessage="${2:You are challenged!}" />$0]]></content>
 	<description>TReCaptcha</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TReCaptcha</tabTrigger>
 </snippet>

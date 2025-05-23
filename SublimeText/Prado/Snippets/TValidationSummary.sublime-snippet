@@ -3,6 +3,6 @@
 	HeaderText="${1:Validation error}"
 	Display="${2:Dynamic}" />$0]]></content>
 	<description>TValidationSummary</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TValidationSummary</tabTrigger>
 </snippet>

@@ -4,6 +4,6 @@
 	<com:TTableCell>${3:cell 2}</com:TTableCell>}$0
 </com:TTableRow>]]></content>
 	<description>TTableRow</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TTableRow</tabTrigger>
 </snippet>

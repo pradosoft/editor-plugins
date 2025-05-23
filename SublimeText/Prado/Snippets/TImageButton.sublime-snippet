@@ -5,6 +5,6 @@
 	Text="${3:hello world}"
 	OnClick="${4:${1}_Clicked}" />$0]]></content>
 	<description>TImageButton</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TImageButton</tabTrigger>
 </snippet>

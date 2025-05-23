@@ -14,6 +14,6 @@
 	</prop:FooterTemplate>
 </com:TActiveRepeater>]]></content>
 	<description>TActiveRepeater</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TActiveRepeater</tabTrigger>
 </snippet>

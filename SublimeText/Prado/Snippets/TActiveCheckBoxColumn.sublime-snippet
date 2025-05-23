@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[<com:TActiveCheckBoxColumn DataField="${2:Field Name from Data Source}" HeaderText="${3:${2}}" />$0]]></content>
 	<description>TActiveCheckBoxColumn</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TActiveCheckBoxColumn</tabTrigger>
 </snippet>

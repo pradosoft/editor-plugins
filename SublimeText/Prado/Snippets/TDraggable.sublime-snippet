@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[<com:TDraggable Handle="${1:idOrClass}" Revert="${2:false}" Ghosting="${3:false}" />$0]]></content>
 	<description>TDraggable</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TDraggable</tabTrigger>
 </snippet>

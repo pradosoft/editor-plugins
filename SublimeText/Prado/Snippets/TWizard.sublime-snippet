@@ -13,6 +13,6 @@
 	</com:TWizardStep>}$0
 </com:TWizard>]]></content>
 	<description>TWizard</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TWizard</tabTrigger>
 </snippet>

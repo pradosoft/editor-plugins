@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[<com:TActiveFileUpload ID="${1:file1}" OnFileUpload="${2:${1}_Uploaded}" />$0]]></content>
 	<description>TActiveFileUpload</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TActiveFileUpload</tabTrigger>
 </snippet>

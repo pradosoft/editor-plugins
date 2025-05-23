@@ -3,6 +3,6 @@
 	${0:<!-- content -->}
 </com:TMarkdown>]]></content>
 	<description>TMarkdown</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TMarkdown</tabTrigger>
 </snippet>

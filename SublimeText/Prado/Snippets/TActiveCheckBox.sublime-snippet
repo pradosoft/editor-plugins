@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[<com:TActiveCheckBox ID="${1:checkBox1}" Text="${2:CheckBox Text}" OnCallback="${3:$1_oncallback}" />$0]]></content>
 	<description>TActiveCheckBox</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TActiveCheckBox</tabTrigger>
 </snippet>

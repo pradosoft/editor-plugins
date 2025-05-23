@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[<com:TLinkButton ID="${1:linkButton1}" Text="${2:Click Me}" OnClick="${3:${1}_Clicked}" />$0]]></content>
 	<description>TLinkButton</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TLinkButton</tabTrigger>
 </snippet>

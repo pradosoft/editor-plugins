@@ -4,6 +4,6 @@
 	<com:TMetaTag Name="${5:keywords}" Content="${6:Prado}" />}$0
 </com:THead>]]></content>
 	<description>THead</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>THead</tabTrigger>
 </snippet>

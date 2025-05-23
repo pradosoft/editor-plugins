@@ -3,6 +3,6 @@
 	$0
 </com:TPanel>]]></content>
 	<description>TPanel</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TPanel</tabTrigger>
 </snippet>

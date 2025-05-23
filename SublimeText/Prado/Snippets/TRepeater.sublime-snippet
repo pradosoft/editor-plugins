@@ -14,6 +14,6 @@
 	</prop:FooterTemplate>
 </com:TRepeater>]]></content>
 	<description>TRepeater</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TRepeater</tabTrigger>
 </snippet>

@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[<com:TTableHeaderCell Text="${1:header text 1}" />$0]]></content>
 	<description>TTableHeaderCell</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TTableHeaderCell</tabTrigger>
 </snippet>

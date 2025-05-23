@@ -6,6 +6,6 @@
 	ClientValidationFunction="${5:clientSideCustomValidate}"}
 	ErrorMessage="${6:required}" />$0]]></content>
 	<description>TActiveCustomValidator (TValidator)</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TActiveCustomValidator</tabTrigger>
 </snippet>

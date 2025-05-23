@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[<com:TInPlaceTextBox ID="${1:textbox1}" Text="${2:text}" OnTextChanged="${3:textChanged}"/>$0]]></content>
 	<description>TInPlaceTextBox</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TInPlaceTextBox</tabTrigger>
 </snippet>

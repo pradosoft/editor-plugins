@@ -7,6 +7,6 @@
 	OnCallback="${5:${1}_oncallback}" 
 />$0]]></content>
 	<description>TActiveImageButton</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TActiveImageButton</tabTrigger>
 </snippet>

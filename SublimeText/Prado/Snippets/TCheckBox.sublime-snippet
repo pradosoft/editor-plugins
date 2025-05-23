@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[<com:TCheckBox ID="${1:checkBox1}" Text="${2:CheckBox Text}" />$0]]></content>
 	<description>TCheckBox</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TCheckBox</tabTrigger>
 </snippet>

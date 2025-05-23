@@ -4,6 +4,6 @@
 	<com:TActiveTableCell>${3:cell 2}</com:TActiveTableCell>}$0
 </com:TActiveTableRow>]]></content>
 	<description>TActiveTableRow</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TActiveTableRow</tabTrigger>
 </snippet>

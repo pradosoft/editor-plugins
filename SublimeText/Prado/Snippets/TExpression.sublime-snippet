@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[<com:TExpression Expression="${1:\$this->Page->Title}" />$0]]></content>
 	<description>TExpression</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TExpression</tabTrigger>
 </snippet>

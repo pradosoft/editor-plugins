@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[<com:TActiveDatePicker ID="${1:datePicker1}" onCallback="${2:$1_oncallback}" DateFormat="${3:dd/MM/yyyy}" ${4:InputMode="${5:DropDownList}"} />$0]]></content>
 	<description>TActiveDatePicker</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TActiveDatePicker</tabTrigger>
 </snippet>

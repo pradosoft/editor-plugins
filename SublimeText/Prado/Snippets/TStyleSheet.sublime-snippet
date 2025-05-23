@@ -3,6 +3,6 @@
 	${2:<!-- insert content here or use StyleSheetUrl -->}
 </com:TStyleSheet>$0]]></content>
 	<description>TStyleSheet</description>
-	<scope>text.html</scope>
+	<scope>source.prado</scope>
 	<tabTrigger>TStyleSheet</tabTrigger>
 </snippet>
